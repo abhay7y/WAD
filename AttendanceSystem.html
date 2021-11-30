@@ -15,7 +15,7 @@
 				<button type="button" class="toggle" onclick="facultyL()">Log In</button>
 				<button type="button" class="toggle" onclick="facultyS()">Sign Up</button>
 			</div>
-			<form id="faculty" class="input">
+			<form id="facultyL" class="input">
 				<input type="text" class="input-field" placeholder="User Id" required>
 				<input type="password" class="input-field" placeholder="Password" required>
 				<br>
@@ -23,7 +23,7 @@
 				<button type="submit" class="submit-btn">Log-In</button>
 			</form>	
 
-			<form id="student" class="input">
+			<form id="facultyS" class="input">
 				<input type="email" class="input-field" placeholder="Email Id" required>
 				<input type="text" class="input-field" placeholder="User Id" required>
 				<input type="password" class="input-field" placeholder="Password" required>
@@ -40,7 +40,7 @@
 				<button type="button" class="toggle" onclick="studentL()">Log In</button>
 				<button type="button" class="toggle" onclick="studentS()">Sign Up</button>
 			</div>
-			<form id="faculty" class="input">
+			<form id="studentL" class="input">
 				<input type="text" class="input-field" placeholder="USN" required>
 				<input type="password" class="input-field" placeholder="Password" required>
 				<br>
@@ -48,7 +48,7 @@
 				<button type="submit" class="submit-btn">Log In</button>
 			</form>	
 
-			<form id="student" class="input">
+			<form id="studentS" class="input">
 				<input type="text" class="input-field" placeholder="Full Name" required>
 				<input type="text" class="input-field" placeholder="USN" required>
 				<input type="password" class="input-field" placeholder="Password" required>
@@ -60,31 +60,33 @@
 	</div>
 
 	<script>
-		var x=document.getElementById("faculty");
-		var y=document.getElementById("student");
+		var x1=document.getElementById("facultyL");
+		var y1=document.getElementById("facultyS");
+		var x2=document.getElementById("studentL");
+		var y2=document.getElementById("studentS");
 		var z=document.getElementById("btn");
 
 		function facultyS(){
-			x.style.left="-400px"
-			y.style.left="50px"
+			x1.style.left="-400px"
+			y1.style.left="50px"
 			z.style.left="110px"
 		}
 
 		function facultyL(){
-			x.style.left="50px"
-			y.style.left="450px"
+			x1.style.left="50px"
+			y1.style.left="450px"
 			z.style.left="0"
 		}
 
 		function studentS(){
-			x.style.left="-400px"
-			y.style.left="50px"
+			x2.style.left="-400px"
+			y2.style.left="50px"
 			z.style.left="110px"
 		}
 
 		function studentL(){
-			x.style.left="50px"
-			y.style.left="450px"
+			x2.style.left="50px"
+			y2.style.left="450px"
 			z.style.left="0"
 		}
 	</script>
