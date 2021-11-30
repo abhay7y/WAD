@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AttendancePro</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">		
+		<div class="formf">
+			<h2 style="text-align:center;">FACULTY</h2>				
+			<div class="button-box">
+				<div id="btn"></div>
+				<button type="button" class="toggle" onclick="facultyL()">Log In</button>
+				<button type="button" class="toggle" onclick="facultyS()">Sign Up</button>
+			</div>
+			<form id="faculty" class="input">
+				<input type="text" class="input-field" placeholder="User Id" required>
+				<input type="password" class="input-field" placeholder="Password" required>
+				<br>
+				<br>
+				<button type="submit" class="submit-btn">Log-In</button>
+			</form>	
+
+			<form id="student" class="input">
+				<input type="email" class="input-field" placeholder="Email Id" required>
+				<input type="text" class="input-field" placeholder="User Id" required>
+				<input type="password" class="input-field" placeholder="Password" required>
+				<br>
+				<br>
+				<button type="submit" class="submit-btn">Sign Up</button>
+			</form>
+		</div>
+
+		<div class="forms">
+		<h2 style="text-align:center;">STUDENT</h2>			
+			<div class="button-box">
+				<div id="btn"></div>
+				<button type="button" class="toggle" onclick="studentL()">Log In</button>
+				<button type="button" class="toggle" onclick="studentS()">Sign Up</button>
+			</div>
+			<form id="faculty" class="input">
+				<input type="text" class="input-field" placeholder="USN" required>
+				<input type="password" class="input-field" placeholder="Password" required>
+				<br>
+				<br>
+				<button type="submit" class="submit-btn">Log In</button>
+			</form>	
+
+			<form id="student" class="input">
+				<input type="text" class="input-field" placeholder="Full Name" required>
+				<input type="text" class="input-field" placeholder="USN" required>
+				<input type="password" class="input-field" placeholder="Password" required>
+				<br>
+				<br>
+				<button type="submit" class="submit-btn">Sign Up</button>
+			</form>					
+		</div>		
+	</div>
+
+	<script>
+		var x=document.getElementById("faculty");
+		var y=document.getElementById("student");
+		var z=document.getElementById("btn");
+
+		function facultyS(){
+			x.style.left="-400px"
+			y.style.left="50px"
+			z.style.left="110px"
+		}
+
+		function facultyL(){
+			x.style.left="50px"
+			y.style.left="450px"
+			z.style.left="0"
+		}
+
+		function studentS(){
+			x.style.left="-400px"
+			y.style.left="50px"
+			z.style.left="110px"
+		}
+
+		function studentL(){
+			x.style.left="50px"
+			y.style.left="450px"
+			z.style.left="0"
+		}
+	</script>
+</body>
+</html>
